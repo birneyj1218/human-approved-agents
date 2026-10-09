@@ -1,0 +1,16 @@
+[
+  {
+    "id": "bgr-msg-001",
+    "from_name": "Dana P.",
+    "from": "dana@example.com",
+    "subject": "Leak over the garage",
+    "body": "Hi, water is dripping through the garage ceiling when it rains. Can someone come look at it this week? Is there anything you can do quickly?"
+  },
+  {
+    "id": "bgr-msg-002",
+    "from_name": "Morgan L.",
+    "from": "morgan@example.com",
+    "subject": "Quote for a full roof replacement",
+    "body": "Our shingle roof is getting old and we are thinking about replacing it. How does a quote work and what warranty do you give?"
+  }
+]

@@ -1,0 +1,36 @@
+# App only. `docker compose up` runs the offline demo.
+# For the Discord approver: fill in .env, then change `command` to
+#   ["haa", "run", "--adapter", "discord"]
+services:
+  app:
+    build: .
+    command: ["haa", "demo"]
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+    restart: "no"
+    # No ports: the bot connects out to Discord; nothing listens.
+
+  # Optional local LLM. Uncomment, then set in .env:
+  #   LLM_PROVIDER=openai
+  #   LLM_BASE_URL=http://ollama:11434/v1
+  #   LLM_MODEL=<a model you have pulled>
+  # ollama:
+  #   image: ollama/ollama
+  #   volumes:
+  #     - ollama:/root/.ollama
+  #   # GPU (NVIDIA Container Toolkit required):
+  #   # deploy:
+  #   #   resources:
+  #   #     reservations:
+  #   #       devices:
+  #   #         - driver: nvidia
+  #   #           count: 1
+  #   #           capabilities: [gpu]
+
+# volumes:
+#   ollama:

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fictional job posts for the demo. Not from any real job site. -->
+<rss version="2.0">
+  <channel>
+    <title>Example job board (fixture)</title>
+    <link>https://jobs.example.com/</link>
+    <description>Fixture feed for human-approved-agents</description>
+    <item>
+      <title>Python automation to sync web form leads into our CRM</title>
+      <link>https://jobs.example.com/posts/1001</link>
+      <guid>jobs.example.com/1001</guid>
+      <author>Priya N.</author>
+      <description><![CDATA[We get leads from a website form and type them into our CRM by hand.
+Looking for someone to automate this with Python or n8n and make it reliable.
+Please describe how you would test it.]]></description>
+    </item>
+    <item>
+      <title>Weekly spreadsheet report from two APIs</title>
+      <link>https://jobs.example.com/posts/1002</link>
+      <guid>jobs.example.com/1002</guid>
+      <author>Marcus T.</author>
+      <description><![CDATA[Every Monday someone pulls numbers from our billing API and our support
+tool API into a spreadsheet. We want that automated. Budget is flexible for the right person.]]></description>
+    </item>
+    <item>
+      <title>Logo and brand colors for a bakery</title>
+      <link>https://jobs.example.com/posts/1003</link>
+      <guid>jobs.example.com/1003</guid>
+      <author>Lena K.</author>
+      <description><![CDATA[Need a friendly logo and a palette for a small bakery.]]></description>
+    </item>
+    <item>
+      <title>n8n workflow cleanup and documentation</title>
+      <link>https://jobs.example.com/posts/1004</link>
+      <guid>jobs.example.com/1004</guid>
+      <author>Jordan B.</author>
+      <description><![CDATA[We have a handful of n8n workflows that break silently. Need someone
+to clean them up, add error alerts and write down how they work.]]></description>
+    </item>
+  </channel>
+</rss>

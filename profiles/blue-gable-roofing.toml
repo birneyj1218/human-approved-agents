@@ -1,0 +1,34 @@
+# Blue Gable Roofing is a fictional trades business answering customer email.
+name = "blue-gable-roofing"
+display_name = "Blue Gable Roofing (fictional)"
+task = "replies to customer emails"
+tone = "calm, clear and practical; answer the question first; no sales pressure"
+
+facts = [
+  "Blue Gable Roofing repairs and replaces asphalt shingle and metal roofs.",
+  "Free inspections are booked Monday to Friday, 8 am to 5 pm.",
+  "For an active leak we can place a temporary tarp, usually within 48 hours of the inspection.",
+  "Repairs carry a 2-year workmanship warranty; full replacements carry a 10-year workmanship warranty.",
+  "We are licensed and insured.",
+  "We do not take gutter-only jobs.",
+]
+
+[rules]
+min_words = 25
+max_words = 150
+sign_off = "The Blue Gable Roofing team"
+banned_phrases = [
+  "I hope this email finds you well",
+  "act now",
+  "limited time",
+  "cheapest",
+  "100% satisfaction",
+]
+claim_keywords = [
+  "licensed", "insured", "warranty", "guarantee", "same day", "same-day",
+  "free", "discount", "financing", "years", "award",
+]
+
+[source]
+type = "json_inbox"
+path = "blue-gable-inbox.json"

@@ -1,0 +1,34 @@
+# A fictional freelancer who answers job posts. Every claim a draft makes
+# must come from `facts`; the Reviewer blocks numbers and claim words that
+# are not backed here.
+name = "freelancer"
+display_name = "Sam Rivera, freelance automation developer (fictional)"
+task = "short replies to job posts"
+tone = "plain, friendly, specific to the post; no hype, no flattery"
+
+facts = [
+  "I build workflow automations in Python and n8n.",
+  "I have connected CRMs, inboxes and spreadsheets through their APIs.",
+  "I write tests for the automations I deliver and hand over a short runbook.",
+  "I work US Central time and reply within one business day.",
+  "My rate is $65 per hour; fixed-price quotes come after a scoping call.",
+]
+
+[rules]
+min_words = 30
+max_words = 140
+sign_off = "Sam Rivera"
+banned_phrases = [
+  "I hope this message finds you well",
+  "rockstar",
+  "ninja",
+  "synergy",
+  "perfect fit",
+  "guaranteed results",
+]
+claim_keywords = ["years", "certified", "certification", "guarantee", "award", "expert", "clients", "Fortune"]
+
+[source]
+type = "rss"
+path = "freelancer-jobs.rss"
+keywords = ["python", "automation", "api", "n8n", "integration"]
